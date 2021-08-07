@@ -1,4 +1,3 @@
-
 const modal = document.getElementById('myModal');
 const modalImg = document.getElementById('img01');
 const captionText = document.getElementById('caption');
