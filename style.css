@@ -1,0 +1,340 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+	font-family: "Trebuchet MS", sans-serif;
+}
+
+/*Formatação de Links*/
+
+a {
+	text-decoration: none;
+	color: grey;
+}
+
+/* Formatação Container*/
+
+#container {
+	background: #fff;
+	background-attachment: fixed;
+
+}
+
+/* Formatação Menu*/
+
+#menu-topo {
+	padding: 15px;
+	/*background: #a0a0a0;*/
+	background: #ff9999;
+	margin-bottom: 10px;
+}
+
+.logo-texto {
+	margin-left: -900px;
+	overflow: hidden;
+	float: left;
+}
+
+#logo img {
+	float: left;
+	width: 150px;
+	height: 94px;
+}
+
+#menu-item {
+	margin-top: 20px;
+	text-align: center;
+	width: 650px;
+	margin-left: 155px;
+}
+
+#menu-item span {	
+	padding: 0 10px;
+	font-weight: bold;
+	color: #fff;
+}
+
+#menu-item span a {
+	line-height: 2em;
+	font-weight: bold;
+	font-size: 1.3em;
+	color: #fff;
+	padding: 5px 10px;
+}
+
+#menu-item span a:hover {
+	line-height: 2em;
+	font-weight: bold;
+	font-size: 1.3em;
+	color: grey;
+	/*background: #fff;*/
+	border-bottom: 2px solid #fff;
+	transition: 0.2s;
+}
+
+#menu-topo hr {
+	color: white;
+	margin: 0 50px;
+	margin-top: 2px;
+}
+
+
+/* Formatação Conteudo*/
+
+#conteudo {
+	width: 70%;
+	min-width: 780px;
+	max-width: 980px;
+	height: 100%;
+	margin: 0 auto;
+	background: #fff;
+	border: 1px solid #ff9999;
+}
+
+/* Formatação Caixas*/
+
+.caixa {
+	height: 400px;
+	margin: 3px 0;
+	position: relative;
+}
+
+/* CAixa 1*/
+.conteudocaixa1 {
+	background-color: #ff9999;
+	background: url(imagens/borda-caixa-right.png) no-repeat top left;	
+	float: left;
+	width: 650px;
+	height: 400px;
+	z-index: 1;
+	position: absolute;
+	opacity: 1;
+	text-transform: uppercase;
+}
+
+.imagemcaixa1 {
+	background: #fff url(imagens/image.png) no-repeat center left;
+	/*background-attachment: fixed;*/
+	background-size: cover;
+	float: right;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+/* CAixa 2*/
+.conteudocaixa2 {
+	background-color: #ff9999;
+	background: url(imagens/borda-caixa-left.png) no-repeat bottom left;	
+	float: left;
+	width: 650px;
+	height: 400px;
+	z-index: 1;
+	position: absolute;
+	opacity: 1;
+	text-transform: uppercase;
+}
+
+.imagemcaixa2 {
+	background: #fff url(imagens/image.png) no-repeat center right;
+	/*background-attachment: fixed;*/
+	background-size: cover;
+	float: right;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+/* Caixa 2 Cancelada
+.conteudocaixa2 {
+	background-color: #ff9999;
+	background: url(imagens/borda-caixa-left.png) no-repeat top left;
+	right: 15px;
+	float: right;
+	width: 60%;
+	height: 450px;
+	position: absolute;
+	opacity: 0.9;
+	text-transform: uppercase;
+}
+
+.imagemcaixa2 {
+	background: #fff url(imagens/imagem2.jpg) no-repeat bottom left;
+	background-attachment: fixed;
+	background-size: cover;
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+Fim Caixa 2 Cancelada */
+
+.conteudo-caixa1 {
+	padding: 25px 10px;
+	text-align: justify;
+	width: 400px;
+	margin-top: 10%;
+	color: #fff;
+}
+
+.conteudo-caixa2 {
+	padding: 25px 10px;
+	text-align: justify;
+	width: 400px;
+	margin-top: 10%;
+	color: #fff;
+}
+
+.caixafim {
+	margin-bottom: 10px;
+}
+
+.conteudocaixa3 {
+	height: 350px;
+	position: relative;
+	background: #fff url(imagens/galeria4.jpg) no-repeat top left;
+}
+
+/*Formatação GALERIA*/
+
+.tabela-fotos {
+	margin: 0 auto;
+	width: 640px;
+	background-color: #fff;
+}
+
+.zoom-imagem {
+	overflow: hidden;
+}
+
+.zoom-imagem img {
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.zoom-imagem img:hover {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	opacity: 0.5;
+}
+
+.quadro-fotos {
+	margin: 0 auto;
+}
+
+.quadro-fotos img {
+	width: 250px;
+	height: 350px;
+	margin: 0 5px;
+	border: 3px solid #ff9999;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+#myImg:hover {opacity: 0.9;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 60%;
+    max-width: 700px
+    height: 61%;
+    max-height: 920px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.4s;
+    animation-name: zoom;
+    animation-duration: 0.4s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/* Formatação Rodapé*/
+
+#rodape {
+	margin-top: 10px;
+	height: 50px;
+	background: #ff9999;
+	padding-top: 23px;
+}
+
+.direito {
+	width: 270px;
+	color: #fff;
+	margin: 0 auto;
+}

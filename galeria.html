@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Página Teste - Com Parallax</title>
+
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+	<body>
+
+		<div id="container"><!-- Inicio Container-->
+			
+			<div id="conteudo"><!-- Inicio Conteudo-->
+
+				<div id="menu-topo"><!-- Inicio Menu Topo--> 
+					<div id="logo">
+						<h1 class="logo-texto">RAQUEL DOCES<h1>
+
+						<a href="index.html">
+							<img src="imagens/logo-raquel1.png">
+						</a>
+					</div>
+
+					<div id="menu-item">
+						<span><a href="index.html">Início</a></span>
+						<span>|</span>
+						<span><a href="galeria.html">Galeria</a></span>
+					</div>
+					<hr>
+					<div style="clear: both;"></div>
+				</div><!-- Fim Menu Topo-->
+
+				<div class="tabela-fotos"><!-- Inicio Tabela Fotos--> 
+					<table class="quadro-fotos">
+
+						<tr>
+							<td class="zoom-imagem">
+									<img id="myImg1" alt="Doce 1" src="imagens/galeria1.jpg" width="300" height="200" onclick="clique(this)">
+							</td>
+							<td class="zoom-imagem">
+									<img id="myImg2" alt="Doce 2" src="imagens/galeria2.jpeg" width="300" height="200" onclick="clique(this)">
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="zoom-imagem">
+									<img id="myImg3" alt="Doce 3" src="imagens/galeria3.jpeg" width="300" height="200" onclick="clique(this)">
+								</a>
+							</td>
+							<td class="zoom-imagem">
+									<img id="myImg4" alt="Doce 4" src="imagens/galeria4.jpg" width="300" height="200" onclick="clique(this)">
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="zoom-imagem">
+									<img id="myImg5" alt="Doce 5" src="imagens/galeria1.jpg" width="300" height="200" onclick="clique(this)">
+								</a>
+							</td>
+							<td class="zoom-imagem">
+									<img id="myImg6" alt="Doce 6" src="imagens/galeria3.jpg" width="300" height="200" onclick="clique(this)">
+								</a>
+							</td>
+						</tr>
+
+					</table>
+
+					<!-- Janela Modal Imagem -->
+
+					<div id="myModal" class="modal">
+						
+						<span class="close">X</span>
+						<img class="modal-content" id="img01">
+						<div id="caption"></div>
+
+					</div>
+
+				</div><!-- Fim Tabela Fotos-->
+
+				<div id="rodape">
+					<div class="direito">
+						&copy;Todos os direitos reservados - 2021.
+					</div>
+				</div>
+
+			</div><!-- Fim Conteudo-->
+
+		</div><!-- Fim Container-->
+
+		<script src="scripts/index.js"></script>
+
+	</body>
+</html>
